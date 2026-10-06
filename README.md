@@ -1,8 +1,21 @@
+<div align="center">
+
+<img src="assets/banner.png" alt="Twitch Chat Keepalive" width="100%">
+
 # Twitch Chat Keepalive
 
-Firefox extension that stops Twitch chat from freezing and reconnecting when chat activity is low.
+**Stops Twitch chat from freezing and reconnecting in Firefox when chat activity is low.**
 
-> 🇪🇸 [Leer en español](#español)
+![License: MIT](https://img.shields.io/badge/license-MIT-8b5cf6)
+![Firefox 140+](https://img.shields.io/badge/Firefox-140%2B-ff7139?logo=firefoxbrowser&logoColor=white)
+![Manifest V2](https://img.shields.io/badge/manifest-v2-6d28d9)
+![No data collected](https://img.shields.io/badge/data%20collected-none-22c55e)
+
+[English](#the-problem) · [Español](#español)
+
+</div>
+
+---
 
 ## The problem
 
@@ -34,6 +47,7 @@ No data is collected, stored or sent anywhere. The extension makes no network re
 ## Install
 
 - **Firefox Add-ons:** link to be added once the listing is approved.
+- **Works on:** Firefox, Waterfox, LibreWolf and other Firefox-based browsers.
 - **Temporary, for testing:** open `about:debugging#/runtime/this-firefox`, click **Load Temporary Add-on…** and select `manifest.json`. It is removed when the browser closes.
 
 Requires Firefox 140+ (Firefox for Android 142+).
