@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Twitch Chat Keepalive",
+  "version": "1.0.0",
+  "description": "Stops Twitch chat from freezing and reconnecting in Firefox: keeps the chat connection alive and recovers instantly if it dies.",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "twitch-chat-keepalive@vulito",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    },
+    "gecko_android": {
+      "strict_min_version": "142.0"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitch.tv/*"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": ["inject.js"]
+}
